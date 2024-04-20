@@ -3,5 +3,6 @@
 
 int main(void)
 {
-    std::cout << "This is an example\n";
+    Complex *number = new Complex(3, -1);
+    std::cout << number->stringify() << "\n";
 }

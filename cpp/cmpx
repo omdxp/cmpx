@@ -1,4 +1,15 @@
 #ifndef _LIBCPP_CMPX
 #define _LIBCPP_CMPX
 
+#include <sstream>
+
+class Complex
+{
+public:
+    double re, im;
+    Complex() : re(0.0), im(0.0) {}
+    Complex(double re, double im) : re(re), im(im) {}
+    std::string stringify();
+};
+
 #endif // _LIBCPP_CMPX

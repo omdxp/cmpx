@@ -1,14 +1,14 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.10)
 project(cmpx)
 
-include_directories(.)
+# Set the include directory for the header-only library
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-add_library(cmpx SHARED cmpx)
+# Create a shared library from cmpx.cpp
+add_library(cmpx SHARED cmpx.cpp)
 
-set_target_properties(cmpx PROPERTIES LINKER_LANGUAGE CPP)
-
+# Add an example executable
 add_executable(example example/main.cpp)
 
+# Link the example executable with the shared library
 target_link_libraries(example cmpx)
-
-message("CMakeLists.txt updated successfully.")
