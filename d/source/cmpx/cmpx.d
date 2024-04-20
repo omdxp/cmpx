@@ -1,4 +1,4 @@
-module cmpx;
+module cmpx.cmpx;
 
 import std.format;
 import std.math;
