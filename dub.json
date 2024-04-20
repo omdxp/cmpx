@@ -4,5 +4,7 @@
   "description": "A pakcage for complex operations.",
   "license": "MIT",
   "name": "cmpx",
-  "sourcePaths": ["d/source"]
+  "sourcePaths": ["d/source"],
+  "targetType": "library",
+  "workingDirectory": "d"
 }
