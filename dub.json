@@ -6,5 +6,6 @@
   "name": "cmpx",
   "sourcePaths": ["d/source"],
   "targetType": "library",
-  "workingDirectory": "d"
+  "workingDirectory": "d",
+  "subPackages": ["d"]
 }
