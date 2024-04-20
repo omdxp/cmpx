@@ -1,9 +1,0 @@
-{
-	"authors": [
-		"Omar"
-	],
-	"copyright": "Copyright © 2024, Omar",
-	"description": "A pakcage for complex operations.",
-	"license": "MIT",
-	"name": "cmpx"
-}

@@ -1,1 +1,3 @@
 build/
+libcmpx.a
+cmpx-test-library
