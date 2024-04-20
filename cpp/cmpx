@@ -2,6 +2,7 @@
 #define _LIBCPP_CMPX
 
 #include <sstream>
+#include <math.h>
 
 class Complex
 {
@@ -9,7 +10,23 @@ public:
     double re, im;
     Complex() : re(0.0), im(0.0) {}
     Complex(double re, double im) : re(re), im(im) {}
-    std::string stringify();
+    std::string stringify() const;
+    Complex *operator+(Complex *other);
+    Complex *operator-(Complex *other);
+    Complex *operator*(Complex *other);
+    Complex *operator/(Complex *other);
+    bool operator>(Complex *other) const;
+    bool operator>=(Complex *other) const;
+    bool operator<(Complex *other) const;
+    bool operator<=(Complex *other) const;
+    bool operator==(Complex *other) const;
+    bool operator!=(Complex *other) const;
+    void operator+=(Complex *other);
+    void operator-=(Complex *other);
+    void operator*=(Complex *other);
+    void operator/=(Complex *other);
+    double mod() const;
+    Complex *con();
 };
 
 #endif // _LIBCPP_CMPX
